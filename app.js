@@ -43,7 +43,7 @@ const f=()=>{const k=q.value.trim().toLowerCase();const r=all.filter(i=>(!k||i.n
 [q,c,l,p].forEach(e=>e.addEventListener('input',f));f();
 const K={dest:'destinasi',food:'kuliner',umkm:'umkm',gem:'permata'};return h('section',{},h('h2',{},title),h('div',{class:'chips'},[['destinasi','Wisata'],['kuliner','Kuliner'],['umkm','UMKM'],['permata','Hidden Gems']].map(([k,n])=>h('a',{class:'chip'+(K[t]===k?' on':''),href:'#/'+k},n))),h('div',{class:'filters'},q,c,l,p),g)}
 R.home=()=>{const ev=[...D.events].sort((a,b)=>a.d.localeCompare(b.d))[0];
-return h('div',{},h('div',{class:'hero'},h('span',{class:'badge'},'Wisata Kota Langsa'),h('h1',{},'Jelajahi Langsa, nikmati setiap sudutnya'),h('p',{},'Destinasi, kuliner khas, UMKM, event, dan itinerary otomatis dalam satu aplikasi.'),h('div',{class:'row'},h('a',{class:'btn gold',href:'#/itinerary'},'Buat Itinerary'),h('a',{class:'btn gold',href:'#/destinasi'},'Jelajahi'))),
+return h('div',{},h('div',{class:'hero'},h('span',{class:'badge'},'Wisata Kota Langsa'),h('h1',{},'Jelajahi Langsa, nikmati setiap sudutnya'),h('p',{},'Destinasi, kuliner khas, UMKM, event, dan itinerary otomatis dalam satu aplikasi.'),h('div',{class:'stats'},[['dest','Destinasi'],['food','Kuliner'],['umkm','UMKM']].map(([t,l])=>h('div',{},h('b',{},String(D.items.filter(i=>i.t===t).length)),h('span',{},l)))),h('div',{class:'row'},h('a',{class:'btn gold',href:'#/itinerary'},'Buat Itinerary'),h('a',{class:'btn gold',href:'#/destinasi'},'Jelajahi'))),
 ev?h('p',{},h('span',{class:'badge'},'Promo Event'),' '+ev.n+' · '+fmt(ev.d)):null,
 h('h2',{},'Pilihan Terbaik'),h('div',{class:'grid'},[...D.items].sort((a,b)=>rate(b.id)-rate(a.id)).slice(0,3).map(card)))};
 R.destinasi=()=>list('dest','Destinasi Wisata');R.kuliner=()=>list('food','Kuliner Khas');R.umkm=()=>list('umkm','UMKM Lokal');
@@ -52,7 +52,7 @@ const rs=h('div',{});const draw=()=>rs.replaceChildren(...(revs(i.id).length?rev
 const s=h('select',{class:'in',id:'rs'},[5,4,3,2,1].map(n=>h('option',{value:String(n)},n+' bintang')));const t=h('textarea',{class:'in',id:'rt',maxlength:'300',rows:'3'});
 const send=()=>{const u=user();if(!u)return toast('Masuk dulu untuk memberi ulasan');const x=t.value.trim();if(x.length<5)return toast('Ulasan minimal 5 karakter');const all=S.g('rev',{});all[i.id]=[...(all[i.id]||[]),{u:u.name,s:Number(s.value),t:x}];S.s('rev',all);t.value='';draw();toast('Ulasan terkirim')};
 const visit=()=>{const u=user();if(!u)return toast('Masuk dulu untuk mencatat riwayat');const k='hist_'+u.email;const v=S.g(k,[]);v.push({id:i.id,d:new Date().toISOString().slice(0,10)});S.s(k,v);toast('Dicatat ke riwayat perjalanan')};
-return h('section',{},h('a',{href:'#/'+(i.t==='dest'?'destinasi':i.t==='food'?'kuliner':'umkm')},'← Kembali'),pic(i),h('h2',{},i.n),h('span',{class:'badge'},TL[i.t]+' · '+i.c),
+return h('section',{},h('a',{href:'#/'+(i.t==='dest'?'destinasi':i.t==='food'?'kuliner':'umkm')},'← Kembali'),pic(i,1),h('h2',{},i.n),h('span',{class:'badge'},TL[i.t]+' · '+i.c),
 h('p',{},i.d),h('p',{},'🎟️ Tiket/Harga: '+rp(i.p)),h('p',{},'🛠️ Fasilitas: '+i.f),h('p',{},'🕒 Jam operasional: '+i.j),h('p',{},'📍 '+i.l),
 h('div',{class:'row'},h('button',{class:'btn',onclick:e=>toggleFav(i.id,e.currentTarget)},fav().includes(i.id)?'♥ Tersimpan':'♡ Simpan'),h('button',{class:'btn gold',onclick:visit},'Tandai dikunjungi'),h('a',{class:'btn ghost',href:'#/peta'},'Lihat di Peta')),
 h('h3',{},'Ulasan ('+(rate(i.id)?rate(i.id).toFixed(1)+'/5':'-')+')'),rs,h('div',{class:'card'},fl('Rating',s),fl('Ulasan',t),h('button',{class:'btn',onclick:send},'Kirim Ulasan')))};
@@ -81,7 +81,7 @@ const addI=()=>{const t=h('select',{class:'in',id:'xt'},Object.keys(TL).map(k=>h
 const addE=()=>modal('Tambah Event',h('div',{},fl('Nama',inp('en')),fl('Tanggal',inp('ed','date')),fl('Lokasi',inp('el')),fl('Jenis',inp('ek','text','Festival'))),[{t:'Simpan',f:()=>{if(!val('en')||!val('ed')||!val('el')){toast('Semua kolom wajib diisi');return false}D.events.push({id:Date.now(),n:val('en'),d:val('ed'),l:val('el'),k:val('ek')||'Kegiatan'});save();go();toast('Event ditambahkan')}}]);
 return h('section',{},h('h2',{},'Dashboard Admin'),h('div',{class:'row'},h('button',{class:'btn',onclick:addI},'+ Item'),h('button',{class:'btn gold',onclick:addE},'+ Event')),h('h3',{},'Destinasi, Kuliner, UMKM'),D.items.map(i=>h('div',{class:'row'},h('span',{},TL[i.t]+': '+i.n),h('button',{class:'btn sm ghost',onclick:()=>del('items',i.id,i.n)},'Hapus'))),h('h3',{},'Event'),D.events.map(e=>h('div',{class:'row'},h('span',{},e.n+' ('+fmt(e.d)+')'),h('button',{class:'btn sm ghost',onclick:()=>del('events',e.id,e.n)},'Hapus'))))};
 const IMG={1:'mangrov-1.png',2:'masjid-islamic-center-langsa.png',3:'taman-kota-langsa.png',4:'pelabuhan-kuala-langsa.png'};
-const pic=i=>{const d=h('div',{class:'ph'});const em=()=>d.replaceChildren(i.e);if(IMG[i.id]){const m=h('img',{src:IMG[i.id],alt:'Foto '+i.n,decoding:'async'});m.addEventListener('error',em);d.append(m)}else em();return d};
+const pic=(i,b)=>{const d=h('div',{class:'ph'+(b?' big':'')});const em=()=>d.replaceChildren(i.e);if(IMG[i.id]){const m=h('img',{src:IMG[i.id],alt:'Foto '+i.n,decoding:'async'});m.addEventListener('error',em);d.append(m)}else em();return d};
 const SVC=[{n:'Pemandu Lokal Mangrove',e:'🧭',p:150000,u:'per trip'},{n:'Fotografer Wisata',e:'📷',p:250000,u:'per sesi'},{n:'Sewa Perahu Kuala Langsa',e:'🛶',p:300000,u:'per perahu'},{n:'Pemandu Kuliner Langsa',e:'🍜',p:100000,u:'per trip'}];
 const ECO=[{id:1,n:'Penanaman Mangrove',pt:50},{id:2,n:'Aksi Bersih Destinasi',pt:30},{id:3,n:'Bawa Tumbler / Tas Belanja Sendiri',pt:10}];
 const GEM=[3,7,8,9,10];
@@ -128,3 +128,4 @@ function nav(){const u=user();const L=[['home','🏠','Beranda'],['destinasi','�
 function go(){const p=location.hash.split('/');const r=p[1]||'home';$('#app').replaceChildren((R[r]||R.home)(p[2]));window.scrollTo(0,0);$('#nav').classList.remove('open');$('#mb').setAttribute('aria-expanded','false');const k=G[r]||r;document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('act',x.dataset.k===k))}
 $('#mb').addEventListener('click',()=>{const o=$('#nav').classList.toggle('open');$('#mb').setAttribute('aria-expanded',String(o))});
 addEventListener('hashchange',go);nav();go();
+addEventListener('scroll',()=>$('header').classList.toggle('sc',scrollY>8),{passive:true});
