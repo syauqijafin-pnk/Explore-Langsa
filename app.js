@@ -6,14 +6,29 @@ const SEED={items:[
 {id:1,t:'dest',n:'Ekowisata Mangrove Kuala Langsa',c:'Alam',l:'Kuala Langsa',p:10000,e:'🌿',d:'Hutan bakau dengan jembatan kayu untuk berjalan santai dan mengamati satwa.',f:'Jembatan kayu, musala, parkir',j:'08.00–17.00',x:80,y:25},
 {id:2,t:'dest',n:'Masjid Agung Darul Falah Langsa',c:'Religi',l:'Pusat Kota',p:0,e:'🕌',d:'Masjid megah dengan arsitektur khas, cocok untuk wisata religi dan swafoto.',f:'Parkir, tempat wudhu, toilet',j:'06.00–21.00',x:40,y:45},
 {id:3,t:'dest',n:'Taman Kota Langsa',c:'Taman',l:'Pusat Kota',p:0,e:'🌳',d:'Ruang terbuka hijau untuk bersantai bersama keluarga di sore hari.',f:'Area bermain, jogging track, kantin',j:'Sepanjang hari',x:48,y:58},
-{id:4,t:'dest',n:'Pelabuhan Kuala Langsa',c:'Bahari',l:'Kuala Langsa',p:5000,e:'⚓',d:'Menikmati suasana pelabuhan dan matahari terbenam di tepi laut.',f:'Dermaga, warung, parkir',j:'07.00–18.00',x:76,y:42},
+{id:4,t:'dest',n:'Pelabuhan Kuala Langsa',c:'Bahari',l:'Kuala Langsa',p:5000,e:'⚓',d:'Menikmati suasana pelabuhan dan matahari terbenam di tepi laut.',f:'Dermaga, warung, parkir',j:'07.00–18.00',x:81,y:43},
 {id:5,t:'food',n:'Mie Aceh Pusat Langsa',c:'Mie & Nasi',l:'Pusat Kota',p:25000,e:'🍜',d:'Mie Aceh pedas berbumbu rempah, pilihan goreng atau kuah.',f:'Dine-in, take away',j:'10.00–22.00',x:34,y:60},
 {id:6,t:'food',n:'Warung Kopi Sanger',c:'Minuman',l:'Pusat Kota',p:12000,e:'☕',d:'Kopi Aceh dengan susu ala sanger, tempat nongkrong khas Aceh.',f:'Wi-Fi, colokan',j:'06.00–23.00',x:52,y:50},
 {id:7,t:'food',n:'Nasi Gurih Pagi',c:'Mie & Nasi',l:'Langsa Kota',p:15000,e:'🍚',d:'Sarapan nasi gurih gurih dengan lauk khas Aceh.',f:'Take away',j:'06.00–11.00',x:58,y:64},
 {id:8,t:'food',n:'Martabak Aceh Malam',c:'Jajanan',l:'Langsa Baro',p:20000,e:'🥞',d:'Martabak telur gurih dengan kuah acar segar.',f:'Dine-in, take away',j:'17.00–23.00',x:30,y:48},
 {id:9,t:'umkm',n:'Anyaman Pandan Langsa',c:'Kerajinan',l:'Langsa Lama',p:35000,e:'🧺',d:'Tikar, tas, dan tempat tisu anyaman pandan buatan perajin lokal.',f:'Pesan khusus',j:'09.00–17.00',x:20,y:40},
 {id:10,t:'umkm',n:'Timphan & Kue Kering Khas',c:'Oleh-oleh',l:'Langsa Kota',p:40000,e:'🍰',d:'Aneka kue tradisional Aceh sebagai buah tangan.',f:'Kemasan hadiah',j:'08.00–20.00',x:26,y:66},
-{id:11,t:'umkm',n:'Kopi Bubuk Aceh Langsa',c:'Oleh-oleh',l:'Langsa Barat',p:50000,e:'🫘',d:'Kopi bubuk sangrai lokal dalam kemasan 250 gram.',f:'Kemasan vakum',j:'08.00–18.00',x:15,y:55}],
+{id:11,t:'umkm',n:'Kopi Bubuk Aceh Langsa',c:'Oleh-oleh',l:'Langsa Barat',p:50000,e:'🫘',d:'Kopi bubuk sangrai lokal dalam kemasan 250 gram.',f:'Kemasan vakum',j:'08.00–18.00',x:15,y:55},
+{id:12,t:'dest',n:'Dermaga Perahu Kuala Langsa',c:'Bahari',l:'Kuala Langsa',p:15000,e:'🛶',d:'Naik perahu menyusuri muara dan hutan bakau.',f:'Perahu, pelampung, parkir',j:'08.00–16.00',x:79,y:52},
+{id:13,t:'dest',n:'Alun-alun Kota Langsa',c:'Taman',l:'Pusat Kota',p:0,e:'🏞️',d:'Pusat berkumpul warga, ramai saat sore dan akhir pekan.',f:'Bangku taman, area kuliner',j:'Sepanjang hari',x:44,y:40},
+{id:14,t:'dest',n:'Pusat Budaya Langsa',c:'Budaya',l:'Pusat Kota',p:5000,e:'🏛️',d:'Mengenal sejarah dan budaya Aceh di Langsa.',f:'Galeri, toilet, parkir',j:'09.00–16.00',x:56,y:35},
+{id:15,t:'dest',n:'Taman Tepi Sungai Langsa',c:'Alam',l:'Langsa Lama',p:0,e:'🌇',d:'Spot santai menikmati senja di tepi sungai.',f:'Bangku, jogging track',j:'15.00–21.00',x:30,y:72},
+{id:16,t:'food',n:'Kuah Pliek U Langsa',c:'Masakan Aceh',l:'Pusat Kota',p:25000,e:'🍲',d:'Gulai sayur khas Aceh dengan rempah kaya.',f:'Dine-in',j:'11.00–21.00',x:38,y:52},
+{id:17,t:'food',n:'Ayam Tangkap Langsa',c:'Masakan Aceh',l:'Langsa Baro',p:35000,e:'🍗',d:'Ayam goreng dengan daun-daunan renyah khas Aceh.',f:'Dine-in, take away',j:'10.00–22.00',x:62,y:55},
+{id:18,t:'food',n:'Roti Canai & Teh Tarik',c:'Jajanan',l:'Pusat Kota',p:15000,e:'🫓',d:'Roti canai hangat dengan kuah kari dan teh tarik.',f:'Dine-in, Wi-Fi',j:'07.00–23.00',x:46,y:62},
+{id:19,t:'food',n:'Seafood Kuala Langsa',c:'Seafood',l:'Kuala Langsa',p:45000,e:'🦐',d:'Ikan, udang, dan kepiting segar dari nelayan pesisir.',f:'Dine-in, pemandangan laut',j:'11.00–22.00',x:78,y:60},
+{id:20,t:'food',n:'Es Kelapa Muda Pinggir Jalan',c:'Minuman',l:'Langsa Kota',p:10000,e:'🥥',d:'Es kelapa muda segar penghilang dahaga.',f:'Take away',j:'10.00–18.00',x:22,y:52},
+{id:21,t:'food',n:'Bakso & Mie Kuah Langsa',c:'Mie & Nasi',l:'Langsa Barat',p:20000,e:'🥣',d:'Bakso dan mie kuah hangat favorit warga.',f:'Dine-in, take away',j:'10.00–21.00',x:14,y:66},
+{id:22,t:'umkm',n:'Batik Aceh Langsa',c:'Kerajinan',l:'Langsa Kota',p:120000,e:'🧵',d:'Kain dan busana bermotif khas Aceh.',f:'Pesan khusus, kemasan hadiah',j:'09.00–17.00',x:36,y:30},
+{id:23,t:'umkm',n:'Dodol & Wajik Khas Aceh',c:'Oleh-oleh',l:'Langsa Kota',p:30000,e:'🍬',d:'Camilan manis tradisional untuk oleh-oleh.',f:'Kemasan hadiah',j:'08.00–20.00',x:52,y:24},
+{id:24,t:'umkm',n:'Keripik Pisang & Kentang',c:'Oleh-oleh',l:'Langsa Barat',p:25000,e:'🍌',d:'Keripik renyah aneka rasa buatan rumahan.',f:'Kemasan vakum',j:'08.00–19.00',x:18,y:28},
+{id:25,t:'umkm',n:'Kerajinan Kerang Pesisir',c:'Kerajinan',l:'Kuala Langsa',p:20000,e:'🐚',d:'Cinderamata dan hiasan dari kerang pesisir.',f:'Pesan khusus',j:'09.00–17.00',x:74,y:32},
+{id:26,t:'umkm',n:'Minyak Kelapa Murni Langsa',c:'Oleh-oleh',l:'Langsa Lama',p:45000,e:'🥥',d:'Minyak kelapa murni lokal untuk masak dan perawatan.',f:'Kemasan botol',j:'08.00–17.00',x:24,y:80}],
 events:[{id:1,n:'Festival Kuliner Langsa',d:'2027-01-23',l:'Taman Kota Langsa',k:'Festival'},{id:2,n:'Bazar UMKM Akhir Pekan',d:'2027-02-06',l:'Pusat Kota',k:'Bazar'},{id:3,n:'Pesta Rakyat Kuala Langsa',d:'2027-03-13',l:'Pelabuhan Kuala Langsa',k:'Kegiatan'}]};
 const D=S.g('data',null)||SEED;
 const save=()=>S.s('data',D);
@@ -45,7 +60,7 @@ const K={dest:'destinasi',food:'kuliner',umkm:'umkm',gem:'permata'};return h('se
 R.home=()=>{const ev=[...D.events].sort((a,b)=>a.d.localeCompare(b.d))[0];
 return h('div',{},h('div',{class:'hero'},h('span',{class:'badge'},'Wisata Kota Langsa'),h('h1',{},'Jelajahi Langsa, nikmati setiap sudutnya'),h('p',{},'Destinasi, kuliner khas, UMKM, event, dan itinerary otomatis dalam satu aplikasi.'),h('div',{class:'stats'},[['dest','Destinasi'],['food','Kuliner'],['umkm','UMKM']].map(([t,l])=>h('div',{},h('b',{},String(D.items.filter(i=>i.t===t).length)),h('span',{},l)))),h('div',{class:'row'},h('a',{class:'btn gold',href:'#/itinerary'},'Buat Itinerary'),h('a',{class:'btn gold',href:'#/destinasi'},'Jelajahi'))),
 ev?h('p',{},h('span',{class:'badge'},'Promo Event'),' '+ev.n+' · '+fmt(ev.d)):null,
-h('h2',{},'Pilihan Terbaik'),h('div',{class:'grid'},[...D.items].sort((a,b)=>rate(b.id)-rate(a.id)).slice(0,3).map(card)))};
+h('h2',{},'Pilihan Terbaik'),h('div',{class:'grid'},[...D.items].sort((a,b)=>rate(b.id)-rate(a.id)).slice(0,3).map(card)),h('div',{class:'card cta'},h('h3',{},'Ada pertanyaan?'),h('p',{class:'mut'},'Tim kami siap membantu rencana perjalananmu.'),h('a',{class:'btn gold',href:'#/kontak'},'Hubungi Kami')))};
 R.destinasi=()=>list('dest','Destinasi Wisata');R.kuliner=()=>list('food','Kuliner Khas');R.umkm=()=>list('umkm','UMKM Lokal');
 R.detail=a=>{const i=D.items.find(x=>x.id===Number(a));if(!i)return h('p',{},'Data tidak ditemukan.');
 const rs=h('div',{});const draw=()=>rs.replaceChildren(...(revs(i.id).length?revs(i.id).map(r=>h('div',{class:'card'},h('strong',{},r.u+' · '+'⭐'.repeat(r.s)),h('p',{},r.t))):[h('p',{class:'mut'},'Belum ada ulasan.')]));draw();
@@ -56,9 +71,52 @@ return h('section',{},h('a',{href:'#/'+(i.t==='dest'?'destinasi':i.t==='food'?'k
 h('p',{},i.d),h('p',{},'🎟️ Tiket/Harga: '+rp(i.p)),h('p',{},'🛠️ Fasilitas: '+i.f),h('p',{},'🕒 Jam operasional: '+i.j),h('p',{},'📍 '+i.l),
 h('div',{class:'row'},h('button',{class:'btn',onclick:e=>toggleFav(i.id,e.currentTarget)},fav().includes(i.id)?'♥ Tersimpan':'♡ Simpan'),h('button',{class:'btn gold',onclick:visit},'Tandai dikunjungi'),h('a',{class:'btn ghost',href:'#/peta'},'Lihat di Peta')),
 h('h3',{},'Ulasan ('+(rate(i.id)?rate(i.id).toFixed(1)+'/5':'-')+')'),rs,h('div',{class:'card'},fl('Rating',s),fl('Ulasan',t),h('button',{class:'btn',onclick:send},'Kirim Ulasan')))};
-R.peta=()=>{let f='all';const m=h('div',{class:'map',role:'group','aria-label':'Peta Langsa'}),info=h('div',{class:'card'},h('p',{class:'mut'},'Pilih penanda untuk melihat info.'));
-const draw=()=>{m.replaceChildren(h('span',{class:'badge'},'Selat Malaka →'));D.items.filter(i=>f==='all'||i.t===f).forEach(i=>{const b=h('button',{class:'pin','aria-label':i.n,onclick:()=>info.replaceChildren(h('h3',{},i.e+' '+i.n),h('p',{},i.l+' · '+rp(i.p)),h('a',{class:'btn sm',href:'#/detail/'+i.id},'Detail'))},i.e);b.style.left=i.x+'%';b.style.top=i.y+'%';m.append(b)})};draw();
-return h('section',{},h('h2',{},'Peta Interaktif'),h('div',{class:'row'},[['all','Semua'],['dest','Wisata'],['food','Kuliner'],['umkm','UMKM']].map(([k,l])=>h('button',{class:'btn sm ghost',onclick:()=>{f=k;draw()}},l))),m,info)};
+const sv=(t,a)=>{const e=document.createElementNS('http://www.w3.org/2000/svg',t);for(const k in a)e.setAttribute(k,a[k]);return e};
+function mapSvg(){const s=sv('svg',{viewBox:'0 0 400 300',preserveAspectRatio:'none','aria-hidden':'true'});const A=(t,a,x)=>{const e=sv(t,a);if(x)e.textContent=x;s.append(e)};
+A('rect',{width:400,height:300,fill:'#eef2e6'});
+A('path',{d:'M372 0C365 60 345 100 330 140S350 230 345 300H400V0Z',fill:'#cfe3e0'});
+A('path',{d:'M372 0C365 60 345 100 330 140S350 230 345 300',fill:'none',stroke:'#b5d3cf','stroke-width':3});
+A('polygon',{points:'300,28 362,24 352,70 340,112 312,100 296,64',fill:'#254D3D','fill-opacity':.28});
+for(let i=0;i<8;i++)for(let j=0;j<8;j++){const x=14+i*38,y=12+j*34;if((i*7+j*3)%5===0||Math.abs(x+12-170)<18||Math.abs(y+11-150)<16||x>290)continue;A('rect',{x,y,width:26,height:22,rx:4,fill:'#e4e9d8'})}
+[[190,170,62,46],[58,36,58,42],[250,200,50,36]].forEach(([x,y,w,hh])=>A('rect',{x,y,width:w,height:hh,rx:9,fill:'#d4e3c8'}));
+A('path',{d:'M0 232C60 200 110 224 170 236S300 262 347 258',fill:'none',stroke:'#9fcbc6','stroke-width':7,'stroke-linecap':'round'});
+const rd=(d,w)=>{A('path',{d,fill:'none',stroke:'#cfd5c2','stroke-width':w+3,'stroke-linecap':'round'});A('path',{d,fill:'none',stroke:'#fff','stroke-width':w,'stroke-linecap':'round'})};
+rd('M0 150H330',7);rd('M170 0V300',7);rd('M170 150L335 132',6);rd('M60 0L100 150L90 300',4);rd('M250 0L255 150L300 300',4);
+A('path',{d:'M0 150H330',fill:'none',stroke:'#E9B44C','stroke-width':1.2,'stroke-dasharray':'6 5'});
+A('text',{x:382,y:170,'font-size':8,fill:'#5a6a61','font-weight':700,'text-anchor':'middle',transform:'rotate(-90 382 170)'},'Selat Malaka');
+A('text',{x:328,y:60,'font-size':7,fill:'#254D3D','font-weight':700,'text-anchor':'middle'},'Hutan Bakau');
+A('text',{x:70,y:145,'font-size':6,fill:'#5a6a61','font-weight':700},'Jl. Utama');
+A('text',{x:60,y:224,'font-size':6,fill:'#5a6a61','font-weight':700},'Sungai Langsa');
+A('text',{x:16,y:20,'font-size':9,fill:'#254D3D','font-weight':800},'U ↑');
+return s}
+R.peta=()=>{let f='all',sel=null,qs='',dr=null;const st={s:1,x:0,y:0};
+const vp=h('div',{class:'map',role:'group','aria-label':'Peta Langsa'}),wd=h('div',{class:'world'}),info=h('div',{class:'card'},h('p',{class:'mut'},'Pilih penanda untuk melihat info.'));
+wd.append(mapSvg());vp.append(wd);
+const ap=()=>{const r=vp.getBoundingClientRect();st.s=Math.min(3.5,Math.max(1,st.s));st.x=Math.min(0,Math.max(r.width*(1-st.s),st.x));st.y=Math.min(0,Math.max(r.height*(1-st.s),st.y));wd.style.transform='translate('+st.x+'px,'+st.y+'px) scale('+st.s+')';wd.style.setProperty('--inv',String(1/st.s))};
+const zoom=(k,cx,cy)=>{const r=vp.getBoundingClientRect();if(cx==null){cx=r.width/2;cy=r.height/2}const n=Math.min(3.5,Math.max(1,st.s*k)),z=n/st.s;st.x=cx-(cx-st.x)*z;st.y=cy-(cy-st.y)*z;st.s=n;ap()};
+const fly=i=>{const r=vp.getBoundingClientRect();st.s=2.2;st.x=r.width/2-i.x/100*r.width*st.s;st.y=r.height/2-i.y/100*r.height*st.s;ap()};
+const show=i=>info.replaceChildren(h('h3',{},i.e+' '+i.n),h('p',{class:'mut'},TL[i.t]+' · '+i.c+' · '+i.l+' · '+rp(i.p)),h('p',{},i.d),h('div',{class:'row'},h('a',{class:'btn sm',href:'#/detail/'+i.id},'Detail'),h('a',{class:'btn sm gold',target:'_blank',rel:'noopener noreferrer',href:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(i.n+' Langsa')},'Buka di Google Maps')));
+const vis=()=>D.items.filter(i=>(f==='all'||i.t===f)&&(!qs||i.n.toLowerCase().includes(qs)));
+const draw=()=>{wd.querySelectorAll('.pin').forEach(p=>p.remove());vis().forEach(i=>{const b=h('button',{class:'pin'+(sel===i.id?' on':''),'aria-label':i.n,onclick:e=>{e.stopPropagation();sel=i.id;fly(i);show(i);draw()}},i.e);b.style.left=i.x+'%';b.style.top=i.y+'%';wd.append(b)});ap()};
+vp.addEventListener('pointerdown',e=>{if(e.target.closest('.pin,.zc'))return;dr={x:e.clientX,y:e.clientY,ox:st.x,oy:st.y};vp.setPointerCapture(e.pointerId);vp.classList.add('drag')});
+vp.addEventListener('pointermove',e=>{if(!dr)return;st.x=dr.ox+e.clientX-dr.x;st.y=dr.oy+e.clientY-dr.y;ap()});
+const end=()=>{dr=null;vp.classList.remove('drag')};vp.addEventListener('pointerup',end);vp.addEventListener('pointercancel',end);
+vp.addEventListener('dblclick',e=>{const r=vp.getBoundingClientRect();zoom(1.6,e.clientX-r.left,e.clientY-r.top)});
+vp.append(h('div',{class:'zc'},h('button',{class:'btn sm gold','aria-label':'Perbesar',onclick:()=>zoom(1.4)},'+'),h('button',{class:'btn sm gold','aria-label':'Perkecil',onclick:()=>zoom(1/1.4)},'−'),h('button',{class:'btn sm gold','aria-label':'Reset peta',onclick:()=>{st.s=1;st.x=0;st.y=0;ap()}},'⟲')));
+const sin=h('input',{class:'in',placeholder:'Cari tempat di peta…',maxlength:'60','aria-label':'Cari di peta'});
+sin.addEventListener('input',()=>{qs=sin.value.trim().toLowerCase();draw();const m=qs?vis():[];if(m.length===1){sel=m[0].id;fly(m[0]);show(m[0]);draw()}});
+const chips=h('div',{class:'chips'},[['all','Semua'],['dest','Wisata'],['food','Kuliner'],['umkm','UMKM']].map(([k,l])=>h('button',{class:'chip'+(k==='all'?' on':''),onclick:e=>{f=k;chips.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));e.currentTarget.classList.add('on');draw()}},l)));
+draw();
+return h('section',{},h('h2',{},'Peta Interaktif'),sin,chips,vp,h('p',{class:'mut'},'Geser untuk menggeser peta, klik dua kali atau tombol +/− untuk zoom.'),info)};
+const KONTAK={email:'halo@explorelangsa.example',wa:'6280000000000',tel:'+62 800-0000-0000',alamat:'Kota Langsa, Aceh, Indonesia',jam:'Senin–Sabtu, 08.00–17.00 WIB'};
+R.kontak=()=>{const msgs=S.g('msgs',[]);
+const faq=[['Bagaimana cara memesan pemandu?','Buka menu Fitur → Pengalaman, pilih layanan, lalu isi tanggal dan jumlah orang.'],['Apakah harga tiket pasti?','Harga bersifat perkiraan. Cek ke pengelola sebelum berkunjung.'],['Bagaimana mendaftarkan usaha UMKM saya?','Kirim pesan lewat formulir di atas, tim kami akan menghubungi Anda.']];
+const nm=inp('kn','text','Nama',40),em=inp('ke','email','Email',80),ms=h('textarea',{class:'in',id:'km',maxlength:'500',rows:'4',placeholder:'Tulis pesan Anda…'});
+const kirim=()=>{const n=nm.value.trim(),e=em.value.trim(),m=ms.value.trim();if(n.length<2)return toast('Nama minimal 2 karakter');if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e))return toast('Email tidak valid');if(m.length<10)return toast('Pesan minimal 10 karakter');msgs.push({id:Date.now(),n,e,m,d:new Date().toISOString().slice(0,10)});S.s('msgs',msgs);nm.value='';em.value='';ms.value='';toast('Pesan terkirim. Terima kasih!')};
+const tiles=[['✉️','Email',KONTAK.email,'mailto:'+KONTAK.email],['💬','WhatsApp',KONTAK.tel,'https://wa.me/'+KONTAK.wa],['📞','Telepon',KONTAK.tel,'tel:'+KONTAK.tel.replace(/[\s-]/g,'')],['📍','Alamat',KONTAK.alamat,''],['🕒','Jam Layanan',KONTAK.jam,'']];
+return h('section',{},h('h2',{},'Hubungi Kami'),h('div',{class:'grid'},tiles.map(([e,t,v,u])=>h(u?'a':'div',Object.assign({class:'card tile'},u?{href:u}:{},u.startsWith('http')?{target:'_blank',rel:'noopener noreferrer'}:{}),h('div',{class:'ic'},e),h('h3',{},t),h('p',{class:'mut'},v)))),
+h('h3',{},'Kirim Pesan'),h('div',{class:'card'},fl('Nama',nm),fl('Email',em),fl('Pesan',ms),h('button',{class:'btn gold',onclick:kirim},'Kirim Pesan')),
+h('h3',{},'Pertanyaan Umum'),faq.map(([q,a])=>h('details',{class:'card faq'},h('summary',{},q),h('p',{class:'mut'},a))))};
 R.event=()=>h('section',{},h('h2',{},'Kalender Event'),h('div',{class:'grid'},[...D.events].sort((a,b)=>a.d.localeCompare(b.d)).map(e=>h('article',{class:'card'},h('span',{class:'badge'},e.k),h('h3',{},e.n),h('p',{class:'mut'},'📅 '+fmt(e.d)),h('p',{class:'mut'},'📍 '+e.l)))));
 R.favorit=()=>{const r=D.items.filter(i=>fav().includes(i.id));return h('section',{},h('h2',{},'Favorit Saya'),r.length?h('div',{class:'grid'},r.map(card)):h('p',{class:'mut'},'Belum ada favorit.'))};
 R.itinerary=()=>{const out=h('div',{});const d=h('select',{class:'in',id:'id'},[1,2,3].map(n=>h('option',{value:String(n)},n+' hari')));const b=inp('ib','number','Anggaran (Rp)',9);const k=h('select',{class:'in',id:'ik'},['Semua','Alam','Religi','Taman','Bahari'].map(v=>h('option',{value:v},v)));
@@ -84,7 +142,7 @@ const IMG={1:'mangrov-1.png',2:'masjid-islamic-center-langsa.png',3:'taman-kota-
 const pic=(i,b)=>{const d=h('div',{class:'ph'+(b?' big':'')});const em=()=>d.replaceChildren(i.e);if(IMG[i.id]){const m=h('img',{src:IMG[i.id],alt:'Foto '+i.n,decoding:'async'});m.addEventListener('error',em);d.append(m)}else em();return d};
 const SVC=[{n:'Pemandu Lokal Mangrove',e:'🧭',p:150000,u:'per trip'},{n:'Fotografer Wisata',e:'📷',p:250000,u:'per sesi'},{n:'Sewa Perahu Kuala Langsa',e:'🛶',p:300000,u:'per perahu'},{n:'Pemandu Kuliner Langsa',e:'🍜',p:100000,u:'per trip'}];
 const ECO=[{id:1,n:'Penanaman Mangrove',pt:50},{id:2,n:'Aksi Bersih Destinasi',pt:30},{id:3,n:'Bawa Tumbler / Tas Belanja Sendiri',pt:10}];
-const GEM=[3,7,8,9,10];
+const GEM=[3,7,8,9,10,15,20,25];
 const need=()=>h('section',{},h('p',{},'Silakan masuk terlebih dahulu.'),h('a',{class:'btn',href:'#/masuk'},'Masuk / Daftar'));
 R.permata=()=>list('gem','Hidden Gems Explorer');
 R.anggaran=()=>{const ds=D.items.filter(i=>i.t==='dest'),sel=new Set(),out=h('div',{class:'card'});const n=id=>Math.max(0,Number(val(id))||0);
@@ -121,9 +179,9 @@ const book=s=>{if(!u)return toast('Masuk dulu untuk memesan');modal('Pesan: '+s.
 return h('section',{},h('h2',{},'Pengalaman Lokal'),h('div',{class:'grid'},SVC.map(s=>h('article',{class:'card'},h('div',{class:'ph'},s.e),h('h3',{},s.n),h('p',{class:'mut'},rp(s.p)+' '+s.u),h('button',{class:'btn',onclick:()=>book(s)},'Pesan')))),h('h3',{},'Pesanan Saya'),mine.length?mine.map(b=>h('p',{},b.s+' · '+fmt(b.d)+' · '+b.p+' orang · '+rp(b.t)+' · '+b.st)):h('p',{class:'mut'},'Belum ada pesanan.'))};
 const A0=R.admin;R.admin=a=>{const n=A0(a),u=user();if(!u||u.role!=='admin')return n;const cl=S.g('claims',[]),bk=S.g('bookings',[]);
 const upd=(k,id,st)=>{const r=S.g(k,[]),x=r.find(z=>z.id===id);if(x)x.st=st;S.s(k,r);go();toast('Status diperbarui')};
-n.append(h('h3',{},'Klaim Eco'),cl.map(c=>h('div',{class:'row'},h('span',{},c.n+' — '+c.l+' — '+c.st),c.st==='Menunggu verifikasi'?h('button',{class:'btn sm gold',onclick:()=>upd('claims',c.id,'Disetujui')},'Setujui'):null)),h('h3',{},'Pesanan Pengalaman'),bk.map(b=>h('div',{class:'row'},h('span',{},b.n+' — '+b.s+' — '+fmt(b.d)+' — '+b.st),b.st!=='Dikonfirmasi'?h('button',{class:'btn sm gold',onclick:()=>upd('bookings',b.id,'Dikonfirmasi')},'Konfirmasi'):null)));return n};
-const G={kuliner:'destinasi',umkm:'destinasi',permata:'destinasi',detail:'destinasi',itinerary:'fitur',anggaran:'fitur',guide:'fitur',paspor:'fitur',eco:'fitur',booking:'fitur',favorit:'fitur',profil:'akun',masuk:'akun'};
-R.fitur=()=>h('section',{},h('h2',{},'Fitur Wisata'),h('div',{class:'grid'},[['itinerary','🗺️','Itinerary AI','Rencana perjalanan otomatis'],['anggaran','💰','Anggaran','Hitung biaya perjalanan'],['guide','💬','AI Guide','Tanya pemandu digital'],['paspor','🎫','Paspor','Kumpulkan stempel'],['eco','🌱','Eco Rewards','Poin ramah lingkungan'],['booking','🧭','Pengalaman','Pesan pemandu & perahu'],['favorit','♥','Favorit','Tempat tersimpan']].map(([k,e,t,s])=>h('a',{class:'card tile',href:'#/'+k},h('div',{class:'ic'},e),h('h3',{},t),h('p',{class:'mut'},s)))));
+n.append(h('h3',{},'Pesan Masuk'),S.g('msgs',[]).map(m=>h('div',{class:'card'},h('strong',{},m.n+' · '+m.e+' · '+m.d),h('p',{},m.m))),h('h3',{},'Klaim Eco'),cl.map(c=>h('div',{class:'row'},h('span',{},c.n+' — '+c.l+' — '+c.st),c.st==='Menunggu verifikasi'?h('button',{class:'btn sm gold',onclick:()=>upd('claims',c.id,'Disetujui')},'Setujui'):null)),h('h3',{},'Pesanan Pengalaman'),bk.map(b=>h('div',{class:'row'},h('span',{},b.n+' — '+b.s+' — '+fmt(b.d)+' — '+b.st),b.st!=='Dikonfirmasi'?h('button',{class:'btn sm gold',onclick:()=>upd('bookings',b.id,'Dikonfirmasi')},'Konfirmasi'):null)));return n};
+const G={kuliner:'destinasi',umkm:'destinasi',permata:'destinasi',detail:'destinasi',itinerary:'fitur',anggaran:'fitur',guide:'fitur',paspor:'fitur',eco:'fitur',booking:'fitur',favorit:'fitur',kontak:'fitur',profil:'akun',masuk:'akun'};
+R.fitur=()=>h('section',{},h('h2',{},'Fitur Wisata'),h('div',{class:'grid'},[['itinerary','🗺️','Itinerary AI','Rencana perjalanan otomatis'],['anggaran','💰','Anggaran','Hitung biaya perjalanan'],['guide','💬','AI Guide','Tanya pemandu digital'],['paspor','🎫','Paspor','Kumpulkan stempel'],['eco','🌱','Eco Rewards','Poin ramah lingkungan'],['booking','🧭','Pengalaman','Pesan pemandu & perahu'],['favorit','♥','Favorit','Tempat tersimpan'],['kontak','📞','Hubungi Kami','Kontak & kirim pesan']].map(([k,e,t,s])=>h('a',{class:'card tile',href:'#/'+k},h('div',{class:'ic'},e),h('h3',{},t),h('p',{class:'mut'},s)))));
 function nav(){const u=user();const L=[['home','🏠','Beranda'],['destinasi','🧭','Jelajah'],['peta','📍','Peta'],['event','📅','Event'],['fitur','✨','Fitur'],[u?'profil':'masuk','👤',u?'Profil':'Masuk']];if(u&&u.role==='admin')L.push(['admin','⚙️','Admin']);$('#nav').replaceChildren(...L.map(([k,e,l])=>h('a',{href:'#/'+k,'data-k':k==='profil'||k==='masuk'?'akun':k},h('b',{},e),h('span',{},l))))}
 function go(){const p=location.hash.split('/');const r=p[1]||'home';$('#app').replaceChildren((R[r]||R.home)(p[2]));window.scrollTo(0,0);$('#nav').classList.remove('open');$('#mb').setAttribute('aria-expanded','false');const k=G[r]||r;document.querySelectorAll('#nav a').forEach(x=>x.classList.toggle('act',x.dataset.k===k))}
 $('#mb').addEventListener('click',()=>{const o=$('#nav').classList.toggle('open');$('#mb').setAttribute('aria-expanded',String(o))});
