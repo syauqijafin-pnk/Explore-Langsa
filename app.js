@@ -4,7 +4,7 @@ const S={g(k,d){try{const v=localStorage.getItem('el_'+k);return v?JSON.parse(v)
 const h=(t,a,...c)=>{const e=document.createElement(t);for(const k in a||{}){if(k==='class')e.className=a[k];else if(k.startsWith('on'))e.addEventListener(k.slice(2),a[k]);else e.setAttribute(k,a[k])}c.flat().forEach(x=>{if(x!=null&&x!==false)e.append(x.nodeType?x:document.createTextNode(String(x)))});return e};
 const SEED={items:[
 {id:1,t:'dest',n:'Ekowisata Mangrove Kuala Langsa',c:'Alam',l:'Kuala Langsa',p:10000,e:'🌿',d:'Hutan bakau dengan jembatan kayu untuk berjalan santai dan mengamati satwa.',f:'Jembatan kayu, musala, parkir',j:'08.00–17.00',x:80,y:25},
-{id:2,t:'dest',n:'Masjid Islamic Center Langsa',c:'Religi',l:'Pusat Kota',p:0,e:'🕌',d:'Masjid megah dengan arsitektur khas, cocok untuk wisata religi dan swafoto.',f:'Parkir, tempat wudhu, toilet',j:'06.00–21.00',x:40,y:45},
+{id:2,t:'dest',n:'Masjid Agung Darul Falah Langsa',c:'Religi',l:'Pusat Kota',p:0,e:'🕌',d:'Masjid megah dengan arsitektur khas, cocok untuk wisata religi dan swafoto.',f:'Parkir, tempat wudhu, toilet',j:'06.00–21.00',x:40,y:45},
 {id:3,t:'dest',n:'Taman Kota Langsa',c:'Taman',l:'Pusat Kota',p:0,e:'🌳',d:'Ruang terbuka hijau untuk bersantai bersama keluarga di sore hari.',f:'Area bermain, jogging track, kantin',j:'Sepanjang hari',x:48,y:58},
 {id:4,t:'dest',n:'Pelabuhan Kuala Langsa',c:'Bahari',l:'Kuala Langsa',p:5000,e:'⚓',d:'Menikmati suasana pelabuhan dan matahari terbenam di tepi laut.',f:'Dermaga, warung, parkir',j:'07.00–18.00',x:76,y:42},
 {id:5,t:'food',n:'Mie Aceh Pusat Langsa',c:'Mie & Nasi',l:'Pusat Kota',p:25000,e:'🍜',d:'Mie Aceh pedas berbumbu rempah, pilihan goreng atau kuah.',f:'Dine-in, take away',j:'10.00–22.00',x:34,y:60},
